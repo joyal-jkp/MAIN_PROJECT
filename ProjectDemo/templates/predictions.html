@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictions</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css')}}" />
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>Predictions</h1>
+    <table>
+        <tr>
+            <th>Predictions</th>
+        </tr>
+        {% for prediction in predictions %}
+        <tr>
+            <td>{{ prediction }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
